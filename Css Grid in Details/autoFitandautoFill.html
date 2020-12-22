@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Grid with Wes</title>
+    <link rel="stylesheet" href="/css/rootstyle.css">
+    </head>
+<body>
+    <div class="container">
+        <!-- .item.item${$}{Item $}*20  **** command for below result** -->
+        <div class="item item1">Item 1</div>
+        <div class="item item2">Item 2</div>
+        <div class="item item3">Item 3</div>
+        <div class="item item4">Item 4</div>
+
+
+    </div>
+
+
+    <style> 
+        /***** Sizing grid items* **** using Span**/
+        .container {
+            display: grid;
+        /* height: 800px; */
+        /* OR VH best* */
+        /* height: 100vh; */
+            grid-gap: 20px;
+            border: 7px solid var(--yellow);
+            
+            /* AUTO FIT WILL END THE GRID ** AUTO FILL NOT */
+            /* grid-template-columns: repeat(auto-fill, 150px); */
+            grid-template-columns: repeat(auto-fit, 150px);
+        }
+
+        .item4 {
+            grid-column-end: -1;
+        }
+        
+    </style>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

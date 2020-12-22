@@ -1,0 +1,151 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #444444; /*white;*/
+  color: black; /*#fffff8;*/
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+.box {
+  border: 1px solid red;
+  padding: 15px;
+}
+
+.container {
+  display: grid;
+  height: 100vh;
+  grid-auto-columns: 1fr;
+  grid-auto-rows: auto;
+  grid-gap: 10px;
+  grid-template-areas:
+    'nav1'
+    'had1'
+    'gal1'
+    'fot1';
+}
+
+.head1 {
+  grid-area: had1;
+}
+.navbar1 {
+  grid-area: nav1;
+}
+.gallery1 {
+  grid-area: gal1;
+}
+
+.footer1 {
+  grid-area: fot1;
+}
+
+.pictures {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Most Important IMG WIDTH in regards to flex to work  */
+.img {
+  /* place-self: start center; */
+  place-self: center center;
+  width: 350px;
+}
+
+/* STYLE WITH TRANSITION */
+
+.img {
+  filter: grayscale(100%);
+  transition: 1s;
+}
+
+.img:hover {
+  filter: grayscale(0);
+  transform: scale(1.1);
+}
+
+@media (min-width: 640px) and (max-width: 900px) {
+  .container {
+    display: grid;
+    grid-auto-columns: repeat(2, 1fr);
+    grid-auto-rows: auto;
+    grid-gap: 10px;
+    grid-template-areas:
+      'nav1 nav1'
+      'had1 had1'
+      'gal1 gal1'
+      'fot1 fot1';
+  }
+}
+
+@media (min-width: 901px) {
+  .container {
+    display: grid;
+    grid-auto-columns: repeat(4, 1fr);
+    grid-auto-rows: auto;
+    grid-gap: 10px;
+    grid-template-areas:
+      'had1 had1 nav1 nav1'
+      'gal1 gal1 gal1 gal1'
+      'fot1 fot1 fot1 fot1';
+  }
+}
+
+/* grid styles/alignment .head { */
+/* grid-column: span 4; */
+/* place-self: start center; */
+/* place-self: center center; */
+/* justify-self: center; */
+/* justify-content: center; */
+/* justify-items: center; */
+/* align-content: center; */
+/* align-items: flex-start; */
+/* } */
+
+/* *********************************************************************************** */
+
+/* OTHER STYLE  */
+/* 
+.img {
+  background: white;
+  padding: 2em;
+  box-shadow: 0 0 20px 20px rgba(0, 0, 0, 0.5);
+} */
+
+/* OTHER STYLE  */
+/* 
+.img {
+  background: white;
+  padding: 2em;
+  box-shadow: inset 0 0 20px 0px;
+} */
+
+/* // STYLE WITH TRANSITION */
+/* .img { */
+/* filter: grayscale(100%); */
+/* transition: 1s; */
+/* } */
+
+/* .img:hover { */
+/* filter: grayscale(0); */
+/* transform: scale(1.1); */
+/* } */
+
+/* .img a::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.img a:hover {
+  color: rgba(255, 255, 255, 0.6);
+  position: relative;
+  z-index: 100;
+} */

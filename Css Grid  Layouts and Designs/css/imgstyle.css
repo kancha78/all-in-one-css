@@ -1,0 +1,212 @@
+@import url('../css/navstyle.css');
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+.box {
+  border: 1px solid red;
+  padding: 15px;
+}
+
+.container {
+  display: grid;
+  height: 100vh;
+  grid-auto-columns: 1fr;
+  grid-auto-rows: min-content;
+  grid-template-areas:
+    'had1'
+    'nav1'
+    'gal1';
+}
+
+.header1 {
+  grid-area: had1;
+}
+
+.navbar1 {
+  grid-area: nav1;
+}
+
+.gallery {
+  grid-area: gal1;
+}
+
+h1 {
+  font-size: 30px;
+  padding: 0 20px;
+}
+
+.gallery {
+  display: grid;
+  /* BEST COLUMN SETTING FOR IMAGES AUTO COLUMN AND RESPONSIVE - Gird Auto Column will not work */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-auto-rows: 350px;
+  grid-gap: 30px;
+}
+
+/* // IMAGE BOX SHADOW  */
+
+.img {
+  display: grid;
+  display: block;
+  width: 100%;
+  /* height: 100%; */
+  background: white;
+  padding: 2em;
+  color: #f8d7da;
+  box-shadow: 0 0 10px 10px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* VERY IMPORTANT TO HAVE CENTER IMAGE BOTTOM ONE  */
+  background-position: center;
+  /* background-size: contain; */
+  border-radius: 50px;
+}
+
+.img,
+a {
+  display: grid;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.img1 {
+  background-image: url('../Dubaipics/1.jpg');
+}
+.img2 {
+  background-image: url('../Dubaipics/2.jpg');
+}
+.img3 {
+  background-image: url('../Dubaipics/3.jpg');
+}
+.img4 {
+  background-image: url('../Dubaipics/4.jpg');
+}
+.img5 {
+  background-image: url('../Dubaipics/5.jpg');
+}
+.img6 {
+  background-image: url('../Dubaipics/6.jpg');
+}
+.img7 {
+  background-image: url('../Dubaipics/7.jpg');
+}
+.img8 {
+  background-image: url('../Dubaipics/8.jpg');
+}
+.img9 {
+  background-image: url('../Dubaipics/9.jpg');
+}
+.img10 {
+  background-image: url('../Dubaipics/10.jpg');
+}
+.img11 {
+  background-image: url('../Dubaipics/11.jpg');
+}
+.img12 {
+  background-image: url('../Dubaipics/12.jpg');
+}
+.img13 {
+  background-image: url('../Dubaipics/13.jpg');
+}
+.img14 {
+  background-image: url('../Dubaipics/14.jpg');
+}
+.img15 {
+  background-image: url('../Dubaipics/15.jpg');
+}
+.img16 {
+  background-image: url('../Dubaipics/16.jpg');
+}
+.img17 {
+  background-image: url('../Dubaipics/17.jpg');
+}
+.img18 {
+  background-image: url('../Dubaipics/18.jpg');
+}
+.img19 {
+  background-image: url('../Dubaipics/19.jpg');
+}
+
+@media (min-width: 640px) and (max-width: 900px) {
+  /* .container {
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+      'had1'
+      'nav1'
+      'gal1';
+  } */
+  h1 {
+    font-size: 30px;
+  }
+}
+
+@media (min-width: 901px) {
+  /* .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+      'had1'
+      'nav1'
+      'gal1';
+  } */
+
+  h1 {
+    font-size: 35px;
+  }
+}
+
+/* OTHER STYLE  */
+/* 
+.img {
+  background: white;
+  padding: 2em;
+  box-shadow: 0 0 20px 20px rgba(0, 0, 0, 0.5);
+} */
+
+/* OTHER STYLE  */
+/* 
+.img {
+  background: white;
+  padding: 2em;
+  box-shadow: inset 0 0 20px 0px;
+} */
+
+/* // STYLE WITH TRANSITION */
+/* .img { */
+/* filter: grayscale(100%); */
+/* transition: 1s; */
+/* } */
+
+/* .img:hover { */
+/* filter: grayscale(0); */
+/* transform: scale(1.1); */
+/* } */
+
+/* .img a::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.img a:hover {
+  color: rgba(255, 255, 255, 0.6);
+  position: relative;
+  z-index: 100;
+} */

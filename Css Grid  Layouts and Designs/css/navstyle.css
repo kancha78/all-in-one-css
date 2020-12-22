@@ -1,0 +1,132 @@
+/* NAVBAR FLEXBOX STYLE IN START */
+
+.navbar1 {
+  background-color: #4176b3;
+  padding: 0 20px;
+}
+.navbar-1 ul {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  list-style: none;
+}
+.navbar-1 a {
+  display: flex;
+  display: block;
+  justify-content: center;
+  justify-items: center;
+  align-content: center;
+  background: white;
+  text-decoration: none;
+  padding: 0.7rem;
+  text-align: center;
+  color: black;
+  /* text-transform: uppercase; */
+  font-size: 1rem;
+  border-radius: 5px;
+}
+
+.navbar-1 a:hover {
+  background: #143f6d;
+  color: white;
+}
+
+@media (min-width: 640px) and (max-width: 900px) {
+  .navbar-1 ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    padding: 0;
+    list-style: none;
+  }
+  .navbar-1 a {
+    display: block;
+    background: white;
+    text-decoration: none;
+    padding: 0.8rem;
+    text-align: center;
+    color: black;
+    text-transform: uppercase;
+    font-size: 1rem;
+    border-radius: 5px;
+  }
+
+  .navbar-1 a:hover {
+    background: #143f6d;
+    color: white;
+  }
+}
+
+@media (min-width: 901px) {
+  .navbar-1 ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    padding: 0;
+    list-style: none;
+  }
+  .navbar-1 a {
+    display: block;
+    background: white;
+    text-decoration: none;
+    padding: 0.8rem;
+    text-align: center;
+    color: black;
+    text-transform: uppercase;
+    font-size: 1rem;
+    border-radius: 5px;
+  }
+
+  .navbar-1 a:hover {
+    background: #143f6d;
+    color: white;
+  }
+}
+
+/* ****************************************************************************************** */
+
+/* GRID STYLE NAVBAR   =  I LIKE THIS ONE MORE :) */
+
+/* 
+.nested-navbar ul {
+  display: grid;
+  display: block;
+  padding: 0;
+  list-style: none;
+}
+.nested-navbar a {
+  display: block;
+  background: white;
+  text-decoration: none;
+  padding: 0.8rem;
+  text-align: center;
+  color: black;
+  text-transform: uppercase;
+  font-size: 1rem;
+  border-radius: 5px;
+}
+.nested-navbar a:hover {
+  background: black;
+  color: white;
+}
+
+@media (min-width: 640px) and (max-width: 900px) {
+  .nested-navbar ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    padding: 0;
+    list-style: none;
+  }
+}
+
+@media (min-width: 901px) {
+  .nested-navbar ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    padding: 0;
+    list-style: none;
+  }
+}
+ */

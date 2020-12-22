@@ -1,0 +1,82 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: yellow;
+  font-size: 18px;
+}
+
+/* .flexbox-container { */
+/* height: 700px; */
+/* display: flex; */
+/* flex-wrap: wrap; */
+/* for main axis, horizontal, width, row */
+/* justify-content: space-evenly; */
+/* for cross axis, vertical, height, column */
+/* align-items: center; */
+/* align-content: flex-end;} */
+
+/* will change to column */
+/* .flexbox-container { */
+/* height: 800px; */
+/* display: flex; */
+/* will change it in column, vertically */
+/* flex-direction: column; */
+/* justify-content: center; */
+/* align-items: center; */
+/* } */
+
+/* .flexbox-item { */
+/* width: 200px; */
+/* margin: 10px; */
+/* border: 3px solid #333; */
+/* background-color: #dfdfdf; */
+/* } */
+
+/* .flexbox-item-1 { */
+/* min-height: 100px; */
+/* } */
+
+/* .flexbox-item-2 { */
+/* min-height: 200px; */
+/* } */
+
+/* .flexbox-item-3 { */
+/* min-height: 300px; */
+/* } */
+
+/* will make changes in items now */
+
+/* will change to column */
+.flexbox-container {
+  display: flex;
+}
+
+.flexbox-item {
+  width: 200px;
+  margin: 10px;
+  border: 3px solid #333;
+  background-color: #dfdfdf;
+}
+
+.flexbox-item-1 {
+  min-height: 100px;
+  /* item-1 will not shrink */
+  flex-shrink: 0;
+  align-self: flex-end;
+}
+
+.flexbox-item-2 {
+  min-height: 200px;
+  /* WILL OVERRIDE AND CENTER THE ITEM */
+  align-self: center;
+}
+
+.flexbox-item-3 {
+  min-height: 300px;
+  /* item-3 will grow till end of row */
+  flex-grow: 1;
+}

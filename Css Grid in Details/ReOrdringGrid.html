@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Grid with Wes</title>
+    <link rel="stylesheet" href="/css/rootstyle.css">
+    </head>
+<body>
+    <div class="container">
+        <!-- .item.logo{LOGO}   *** Entry to Get below result-->
+        <div class="item logo">LOGO</div>
+        <div class="item nav">NAV</div>
+        
+        <!-- .item.content>p{I'm the Content!}   *** Awesome to get below result-->
+        <div class="item content">
+            <p>I'm the Content!</p>
+        </div>
+
+    </div>
+
+
+    <style> 
+        .container {
+            display: grid;
+        /* height: 800px; */
+        /* OR VH best* */
+        /* height: 100vh; */
+        grid-gap: 20px;
+            border: 7px solid var(--yellow);
+            grid-template-columns: repeat(10, 1fr);
+        }
+
+        .logo {
+            grid-column: span 2;
+            /* TO CHANGE THE POSITION OF ITEM BY USING ORDER PROPERTY */
+            order: 2;
+            
+        }
+
+        .nav {
+            grid-column: span 8;
+            order: 1;
+        }
+        .content {
+            grid-column: 1 / -1 ;
+            order: 3;
+
+
+        }
+    </style>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
